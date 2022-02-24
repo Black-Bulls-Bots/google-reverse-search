@@ -3,12 +3,9 @@ from setuptools import setup
 with open("README.md", "r", encoding="utf-8") as file:
     long_description = file.read()
 
-with open('requirements.txt') as f:
-    dependencies = [l.strip() for l in f]
-
 setup(
     name="google-reverse-search",
-    version="0.1.2",
+    version="0.1.3",
     author="Joker Hacker",
     author_email="jokerhacker.6521@protonmail.com",
     packages=["GoogleSearch"],
@@ -20,6 +17,10 @@ setup(
     project_urls = {
         "Discussion" : "https://t.me/blackbulls_support",
     },
-    install_requires=dependencies,
+    install_requires=[
+    "beautifulsoup4",
+    "requests",
+    "urllib3"
+],
     python_requires = ">=3.8"
 )
