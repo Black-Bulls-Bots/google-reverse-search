@@ -1,4 +1,4 @@
-# google-reverse-search
+# google-reverse-search (NOT WORKING)
 Simple python3 library to reverse search any image via url or file
 
 ## Installation
